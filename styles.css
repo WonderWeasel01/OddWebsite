@@ -83,6 +83,7 @@ a {
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
+    
 
     .nav-menu.active {
         left: 0;
@@ -95,6 +96,18 @@ a {
     .hamburger {
         display: block;
         cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
 }
